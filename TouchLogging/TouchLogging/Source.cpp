@@ -127,6 +127,7 @@ WinMain (HINSTANCE Instance,
 
         if (WindowHandle)
         {
+            ShowWindow(WindowHandle, SW_MAXIMIZE);
             MSG Message;
             while (GetMessage(&Message, nullptr, 0, 0))
             {
